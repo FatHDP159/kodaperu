@@ -29,112 +29,69 @@
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <button class="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </nav>
     </header>
 
     <!-- Simulación de contenido para poder probar el scroll -->
     <section id="inicio">
         <div class="content">
-            <h1>Bienvenido</h1>
+            <h1>Bienvenido a K'ODA</h1>
             <p>"Tú lo imaginas, nosotros lo hacemos realidad"</p>
-            <a href="#contacto" class="btn">Contáctanos</a> <!-- Botón que redirige a la sección de contacto -->
+            <a href="https://api.whatsapp.com/send?phone=937369597" class="btn">Contáctanos</a> <!-- Botón que redirige a la sección de contacto -->
         </div>
     </section>
 
-
-
-
-<section id="servicios" style="height: 100vh;">
-    <div class="content">
-        <h1>¿Qué servicios realizamos?</h1>
-        <p>Explora nuestros servicios principales</p>
-        
-        <div class="carousel-container">
-            <div class="carousel">
-                <!-- Tarjeta 1 -->
-                <div class="card" onclick="window.location.href='https://tusitio.com/diseno-logos';">
-                    <img src="nosotros.jpeg" alt="Diseño de logos">
-                    <div class="card-content">
-                        <h2>Diseño de logos</h2>
-                        <p>Creamos logotipos únicos y personalizados para tu empresa.</p>
-                    </div>
-                </div>
-                <!-- Tarjeta 2 -->
-                <div class="card" onclick="window.location.href='https://tusitio.com/diseno-web';">
-                    <img src="nosotros.jpeg" alt="Diseño web">
-                    <div class="card-content">
-                        <h2>Diseño web</h2>
-                        <p>Diseñamos sitios web modernos y atractivos para tu marca.</p>
-                    </div>
-                </div>
-                <!-- Tarjeta 3 -->
-                <div class="card" onclick="window.location.href='https://tusitio.com/desarrollo-web';">
-                    <img src="nosotros.jpeg" alt="Desarrollo web">
-                    <div class="card-content">
-                        <h2>Desarrollo Web</h2>
-                        <p>Desarrollamos sitios web funcionales y optimizados.</p>
-                    </div>
-                </div>
-                <!-- Tarjeta 4 -->
-                <div class="card" onclick="window.location.href='https://tusitio.com/software-gestion';">
-                    <img src="enterprise-software.jpg" alt="Software de gestión empresarial">
-                    <div class="card-content">
-                        <h2>Software de gestión empresarial</h2>
-                        <p>Soluciones a medida para la gestión de tu negocio.</p>
-                    </div>
-                </div>
+    <section id="servicios">
+        <h1>Servicios</h1>
+        <p class="section-description">Descubre cómo podemos ayudarte a transformar tu negocio con nuestras soluciones personalizadas.</p>
+        <div class="cards-container">
+            <div class="card">
+                <img src="servicio1.jpg" alt="Servicio 1" class="card-image">
+                <h2>Desarrollo Web</h2>
+                <p>Creación de sitios web atractivos y funcionales que impulsan tu presencia en línea.</p>
+                <a href="#contacto" class="btn">Solicita una Cotización</a>
+            </div>
+            <div class="card">
+                <img src="servicio2.jpg" alt="Servicio 2" class="card-image">
+                <h2>Marketing Digital</h2>
+                <p>Estrategias efectivas de marketing digital para aumentar tu visibilidad y atraer clientes.</p>
+                <a href="#contacto" class="btn">Solicita una Cotización</a>
+            </div>
+            <div class="card">
+                <img src="servicio3.jpg" alt="Servicio 3" class="card-image">
+                <h2>Consultoría</h2>
+                <p>Asesoramiento experto para mejorar tu estrategia de negocio y tecnología.</p>
+                <a href="#contacto" class="btn">Solicita una Cotización</a>
             </div>
         </div>
-    </div>
-</section>
-
-
+    </section>
 
     <section id="nosotros" style="height: 100vh; padding-top: 60px; background-color: #fff;">
         <div class="content">
             <h1>Nosotros</h1>
+            <p class="section-description">Conoce quiénes somos, nuestra misión, visión y valores que nos impulsan a ofrecer lo mejor.</p>
             <div class="cards-container">
                 <div class="card">
                     <img src="nosotros.jpeg" alt="Misión" class="card-image">
                     <h2>Misión</h2>
-                    <p>Tenemos como mision crear soluciones innovadoras y efectivas que a traves de diseños atractivos
-                        ayudar a nuestros clientes cumplir con sus objetivos y mejorar su presencia en linea.</p>
+                    <p>Crear soluciones innovadoras y efectivas a través de diseños atractivos que ayuden a nuestros clientes a cumplir sus objetivos y mejorar su presencia en línea.</p>
                 </div>
                 <div class="card">
                     <img src="nosotros.jpeg" alt="Visión" class="card-image">
                     <h2>Visión</h2>
-                    <p>Ser una empresa reconocida por nuestra creatividad, calidad. Asi establecer nuevos estandares,
-                        entregando experiencias
-                        digitales unicas que impulsan el crecimiento y el exito de nuestros clientes
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="nosotros.jpeg" alt="Visión" class="card-image">
-                    <h2>Visión</h2>
-                    <p>Ser una empresa reconocida por nuestra creatividad, calidad. Asi establecer nuevos estandares,
-                        entregando experiencias
-                        digitales unicas que impulsan el crecimiento y el exito de nuestros clientes
-                    </p>
+                    <p>Ser una empresa reconocida por nuestra creatividad y calidad, estableciendo nuevos estándares y entregando experiencias digitales únicas que impulsen el crecimiento y éxito de nuestros clientes.</p>
                 </div>
                 <div class="card">
                     <img src="nosotros.jpeg" alt="Valores" class="card-image">
                     <h2>Valores</h2>
-                    <p> &bull; Integridad
-                        </br>
-                        &bull; Compromiso
-                        </br>
-                        &bull; Creatividad
-                        </br>
-                        &bull; Innovacion
-                        </br>
-                        &bull; Excelencia en cada proyecto.
-                    </p>
+                    <p>• Integridad<br>• Compromiso<br>• Creatividad<br>• Innovación<br>• Excelencia en cada proyecto.</p>
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <section id="contacto" style="height: 100vh;">
         <div class="contact-wrapper">
@@ -161,9 +118,6 @@
         </div>
     </section>
 
-
-
-
     <!-- Pie de Página -->
     <footer class="footer">
         <div class="footer-container">
@@ -171,19 +125,19 @@
             <div class="footer-col">
                 <h3>Contacto</h3>
                 <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
-                <p>Teléfono: +51 901 274 473</p>
-                <p>kodaperu@gmail.com</p>
+                <p>Teléfono: +51 937 369 597 </p>
+                <p>Email: <a href="mailto:kodaperu@gmail.com">kodaperu@gmail.com</a></p>
                 <div class="social-links">
-                    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=901274473" target="_blank" class="social-icon">
+                    <a href="https://api.whatsapp.com/send?phone=901274473" target="_blank" class="social-icon" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -213,12 +167,11 @@
 
         <!-- Texto Legal -->
         <div class="footer-bottom">
-            <p>&copy; 2024 K'ODA Perú. Todos los derechos reservados. <a href="#">Política de Privacidad</a> | <a
-                    href="#">Términos y Condiciones</a></p>
+            <p>&copy; 2024 K'ODA Perú. Todos los derechos reservados.</p>
         </div>
 
         <!-- Botón Flotante de WhatsApp -->
-        <a href="https://api.whatsapp.com/send?phone=901274473" class="whatsapp-button" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=937369597" class="whatsapp-button" target="_blank" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </footer>
