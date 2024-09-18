@@ -13,6 +13,7 @@ body {
     color: #333;
 }
 
+/* Cabecera */
 header.dynamic-header {
     background-color: #fff; /* Cabecera blanca */
     color: black;
@@ -26,7 +27,6 @@ header.dynamic-header {
     width: 100%;
     z-index: 1000; /* Asegura que la cabecera esté encima de otros elementos */
 }
-
 
 header a {
     text-decoration: none;
@@ -44,6 +44,7 @@ header img {
 .navbar ul li {
     margin-left: 20px;
 }
+
 .navbar ul li a {
     color: #000; /* Letras negras inicialmente */
     padding: 10px 20px; /* Espacio alrededor del texto */
@@ -62,7 +63,6 @@ header img {
     background-color: #8bffff; /* Fondo turquesa al hacer hover */
 }
 
-
 /* Header sticky al hacer scroll */
 .sticky {
     position: fixed;
@@ -70,6 +70,7 @@ header img {
     width: 100%;
     z-index: 1000;
 }
+
 /* Estilos para la sección de "inicio" */
 #inicio {
     position: relative;
@@ -90,7 +91,8 @@ header img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Capa oscura semitransparente */
     z-index: 1;  /* Asegura que la capa esté delante del fondo */
-    }
+}
+
 /* Contenido centrado */
 #inicio .content {
     position: relative;
@@ -102,7 +104,7 @@ header img {
 #inicio h1 {
     font-size: 48px;
     margin: 0;
-    margin-top: -220px; /*subir y bajar contenido*/
+    margin-top: -220px; /* Subir y bajar contenido */
     font-weight: bold;
 }
 
@@ -129,114 +131,21 @@ header img {
 #inicio .btn:hover {
     background-color: #00b3b3; /* Color más oscuro al pasar el ratón */
 }
-/*Fin inicio*/
 
-/* Ajustes para el contenedor del carrusel */
-.carousel-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 0; /* Agrega algo de espacio arriba y abajo */
-}
-
-/* Mantén el estilo del carrusel igual */
-.carousel {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-    width: calc(250px * 12); /* Ancho total para las 12 tarjetas */
-}
-
-/* Mantén el estilo de las tarjetas */
-.card {
-    background-color: #fff;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Borde ligero alrededor de la tarjeta */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-    overflow: hidden;
-    width: 250px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-.card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.card-content {
-    padding: 20px;
-    text-align: center;
-}
-
-.card h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 14px;
-    color: #666;
-}
-
-/* Efecto de zoom y sombreado más intenso al hacer hover sobre la tarjeta */
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra más fuerte al hacer hover */
-}
-
-/* Flechas de control */
-.carousel-control {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 15px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    font-size: 24px;
-    width: 50px; /* Ancho de las flechas */
-    height: 50px; /* Alto de las flechas */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Flecha izquierda fuera del carrusel */
-.prev {
-    left: -60px; /* Ajusta según sea necesario para que esté justo fuera del contenedor */
-}
-
-/* Flecha derecha fuera del carrusel */
-.next {
-    right: -60px; /* Ajusta según sea necesario para que esté justo fuera del contenedor */
-}
-
-/* Cambio de color de las flechas al hacer hover */
-.carousel-control:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al hacer hover */
-}
-
-/*SECCION DE NOSOTROS EN LA PAG WEB*/
-#nosotros {
+/* Estilos para la sección de servicios */
+#servicios {
     padding: 60px 20px; /* Espaciado interno adicional */
-    background-color: #fff; /* Fondo blanco */
-    position: relative; /* Permite posicionar el título más arriba si es necesario */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    position: relative;
 }
 
-/* Estilo del título Nosotros */
-#nosotros h1 {
-    font-family: 'Roboto', sans-serif; /* Tipografía suave y moderna */
+#servicios h1 {
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
     font-size: 40px; /* Tamaño de fuente grande */
     font-weight: 800; /* Peso de fuente en negrita */
     color: #333; /* Color del texto */
-    margin-top: -20px; /* Ajusta este valor para subir el título más arriba */
     text-align: center; /* Centra el título */
+    margin-bottom: 40px; /* Espacio debajo del título */
 }
 
 /* Contenedor de las tarjetas */
@@ -245,12 +154,11 @@ header img {
     flex-wrap: wrap;
     justify-content: center; /* Centra las tarjetas horizontalmente */
     gap: 20px; /* Espacio entre tarjetas */
-    margin-top: 50px; /* Ajusta este valor para bajar las tarjetas */
 }
 
 /* Estilo de las tarjetas */
 .card {
-    background-color: #f9f9f9; /* Fondo de la tarjeta */
+    background-color: #fff; /* Fondo blanco */
     border: 1px solid #ddd; /* Borde gris claro */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -289,8 +197,6 @@ header img {
     line-height: 1.5;
 }
 
-
-/*FIN SECCION DE NOSOTROS EN LA PAG WEB*/
 /* Estilos para la sección de contacto */
 #contacto {
     height: 100vh; /* Altura completa de la ventana */
@@ -325,7 +231,6 @@ header img {
     align-items: center;
 }
 
-
 .contact-form {
     flex: 1;
     padding: 20px;
@@ -349,52 +254,74 @@ header img {
     font-weight: bold;
     margin-top: 10px;
     display: block;
+    color: #666;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
-    width: calc(100% - 20px); /* Ajusta el ancho para el relleno */
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Borde sombreado */
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
 }
 
 .contact-form button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #8bffff;
+    background-color: #8bffff; /* Color de fondo del botón */
     border: none;
-    border-radius: 5px;
     color: #fff;
-    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    display: block;
-    width: 100%;
+    margin-top: 10px;
 }
 
 .contact-form button:hover {
-    background-color: #00b3b3;
+    background-color: #00b3b3; /* Color más oscuro al pasar el ratón */
 }
 
-.contact-image {
+.contact-info {
     flex: 1;
-    text-align: center;
+    background-color: #f5f5f5; /* Fondo gris claro para el área de información */
     padding: 20px;
-}
-
-.contact-image img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    display: inline-block;
+    animation: slide-up 1s ease-out;
+    max-width: 600px; /* Ajusta según el ancho máximo deseado */
 }
 
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.contact-info a {
+    color: #00b3b3; /* Color de los enlaces */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Animación del formulario de contacto y la información */
 @keyframes slide-up {
     from {
         opacity: 0;
@@ -406,14 +333,14 @@ header img {
     }
 }
 
-
+/* Pie de página */
 /* Estilo del pie de página */
 .footer {
     background-color: #fff; /* Fondo blanco */
     color: #000; /* Texto en negro */
     padding: 20px;
     font-family: Arial, sans-serif;
-}
+}   
 
 .footer-container {
     display: flex;
@@ -466,7 +393,6 @@ header img {
 .social-icon:hover {
     color: #00b3b3; /* Color turquesa al hacer hover */
     text-decoration: underline;
-
 }
 
 .footer-bottom {
@@ -492,17 +418,87 @@ header img {
     bottom: 30px;
     right: 30px;
     background: #0df053;
-    color: #fff ;
+    color: #fff;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 0px 1px 10px rgba(0, 0,0,0.3);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
 }
 
 .whatsapp-button:hover {
     background-color: #128c7e; /* Color verde oscuro de WhatsApp al hacer hover */
 }
+
 section {
     scroll-margin-top: 71px; /* Ajusta este valor según la altura de tu cabecera */
+}
+
+/* Estilos para el menú en dispositivos móviles */
+.navbar {
+    display: none; /* Oculta el menú en dispositivos móviles */
+}
+
+.menu-toggle {
+    display: none; /* Oculta el botón de menú por defecto */
+}
+
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #8bffff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-toggle:hover {
+    background-color: #00b3b3; /* Color más oscuro al pasar el ratón */
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajusta según la altura de tu cabecera */
+    right: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 1000;
+}
+
+.menu.active {
+    display: flex; /* Muestra el menú cuando esté activo */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    border-bottom: 1px solid #ddd; /* Línea separadora entre elementos */
+}
+
+.menu ul li a {
+    display: block;
+    padding: 15px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    background-color: #8bffff; /* Fondo turquesa al hacer hover */
+    color: #000;
 }
