@@ -34,36 +34,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
     observer.observe(contactForm);
 });
-    let currentPosition = 0;
-    const cards = document.querySelector('.carousel');
-    const cardWidth = 270; // Ancho de la tarjeta + margen (250px + 20px)
-    const visibleCards = 4; // Cantidad de tarjetas visibles
-    const totalCards = document.querySelectorAll('.card').length; // Número total de tarjetas
-
-    // Duplicamos las tarjetas para hacer que el carrusel sea infinito
-    const cloneCarousel = () => {
-        const cardsClone = cards.innerHTML;
-        cards.innerHTML += cardsClone;
-    };
-
-    // Movemos el carrusel en bucle
-    function moveCarousel(direction) {
-        currentPosition += direction * cardWidth;
-
-        // Si desplazamos a la derecha y llegamos al final de las tarjetas originales
-        if (currentPosition >= cardWidth * totalCards) {
-            currentPosition = 0;
-        }
-
-        // Si desplazamos a la izquierda y llegamos al principio de las tarjetas
-        if (currentPosition < 0) {
-            currentPosition = cardWidth * (totalCards - visibleCards);
-        }
-
-        cards.style.transform = `translateX(-${currentPosition}px)`;
+// 1. Cambio de Color en la Cabecera al Hacer Scroll
+document.addEventListener('scroll', function() {
+    const header = document.querySelector('.dynamic-header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
     }
+});
 
-    // Inicializamos el carrusel duplicando las tarjetas
-    cloneCarousel();
+// 2. Mostrar y Ocultar Menú en Dispositivos Móviles
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
+});
 
+// 3. Deslizarse a Secciones Específicas
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// 4. Validación Básica del Formulario de Contacto
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    const name = document.querySelector('#name').value;
+    const email = document.querySelector('#email').value;
+    const message = document.querySelector('#message').value;
+
+    if (!name || !email || !message) {
+        alert('Por favor, completa todos los campos del formulario.');
+        e.preventDefault();
+    }
+});
+
+// 5. Efecto de Desvanecimiento para las Tarjetas
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mouseover', function() {
+        this.style.opacity = 0.8;
+    });
+
+    card.addEventListener('mouseout', function() {
+        this.style.opacity = 1;
+    });
+});
+
+  
   
